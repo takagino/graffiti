@@ -167,17 +167,16 @@
 
 <div class="controls" bind:this={controlsContainer}>
   <div class="control-item">
-    <label for="colorPicker">Color</label>
     <input type="color" id="colorPicker" bind:value={currentColor}>
   </div>
 
   <div class="control-item">
-    <label for="weightSlider">Weight: {currentWeight}</label>
+    <label for="weightSlider">{currentWeight}</label>
     <input type="range" id="weightSlider" min="1" max="50" step="1" bind:value={currentWeight}>
   </div>
 
-  <button on:click={clearCanvas}>Clear</button>
-  <button on:click={submitDrawing}>Submit</button>
+  <button on:click={clearCanvas}>❌</button>
+  <button on:click={submitDrawing}>⇧</button>
 </div>
 
 <style>
